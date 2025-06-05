@@ -18,6 +18,7 @@ moodBtn.addEventListener('click', () => {
     moodText.textContent = `The system hums with ${choice}.`;
     moodText.classList.add('pulse');
     document.body.style.background = `radial-gradient(circle at 50% 50%, ${getRandomColor()}, ${getRandomColor()})`;
+    document.body.classList.toggle('spiral');
 });
 
 function getRandomColor() {
