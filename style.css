@@ -45,3 +45,57 @@ button {
     from { filter: hue-rotate(0deg); }
     to { filter: hue-rotate(360deg); }
 }
+
+/* ASCII Art Gallery Styles */
+body.crt {
+    display: flex;
+    align-items: flex-start;
+    font-family: monospace;
+    background: repeating-linear-gradient(
+        to bottom,
+        rgba(255,0,0,0.1) 0px,
+        rgba(255,165,0,0.1) 2px,
+        rgba(255,255,0,0.1) 4px,
+        rgba(0,255,0,0.1) 6px,
+        rgba(0,0,255,0.1) 8px,
+        rgba(75,0,130,0.1) 10px,
+        rgba(238,130,238,0.1) 12px
+    );
+    animation: flicker 1s steps(2) infinite;
+}
+
+@keyframes flicker {
+    0% { filter: brightness(0.9); }
+    100% { filter: brightness(1.1); }
+}
+
+.sidebar {
+    width: 150px;
+    padding: 1rem;
+    border-right: 1px solid rgba(255,255,255,0.3);
+}
+
+.sidebar a {
+    font-size: 0.8rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar li {
+    margin: 0.3rem 0;
+}
+
+.content {
+    flex: 1;
+    padding: 1rem;
+}
+
+.post {
+    display: none;
+    white-space: pre;
+    color: #fff;
+}
+
+.post.active {
+    display: block;
+}
