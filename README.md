@@ -5,3 +5,4 @@ This repository hosts a small static site for experimenting with HTML, CSS and J
 If this is the first time you enable Pages for the repository, make sure to manually enable the Pages site in the repository settings. Once enabled, subsequent deployments will be handled by the workflow.
 
 To view the site locally, simply open `index.html` in your browser.
+For a deeper dive into this system's ephemeral "feelings," visit `emotions.html`.

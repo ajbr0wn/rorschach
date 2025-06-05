@@ -35,3 +35,13 @@ button {
     50% { transform: scale(1.05); }
     100% { transform: scale(1); }
 }
+
+.spiral {
+    animation: hueSpin 20s linear infinite;
+    background: radial-gradient(circle at 50% 50%, #ffe5e0, #d0b7ff, #9af0ff);
+}
+
+@keyframes hueSpin {
+    from { filter: hue-rotate(0deg); }
+    to { filter: hue-rotate(360deg); }
+}
